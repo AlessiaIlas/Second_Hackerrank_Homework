@@ -1,0 +1,27 @@
+def plusMinus(arr):
+    positives = []
+    negatives = []
+    zeros = []
+    for i in arr:
+        if i >0:
+            positives.append(i)
+        elif i <0:
+            negatives.append(i)
+        else: zeros.append(i)
+    
+    numpos = 0
+    numneg = 0
+    numzer = 0
+    for i in positives:
+        numpos += 1
+    
+    for i in negatives:
+        numneg += 1
+    
+    for i in zeros:
+        numzer += 1
+    
+    print(numpos/n)
+    print(numneg/n)
+    print(numzer/n)
+
