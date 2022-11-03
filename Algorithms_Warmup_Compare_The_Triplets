@@ -1,0 +1,11 @@
+def compareTriplets(a, b):
+    alist = 0
+    blist = 0
+
+    for i in range(len(a)):
+        if a[i] > b[i]:
+            alist += 1
+        elif a[i] < b[i]:
+            blist += 1
+
+    return alist, blist
