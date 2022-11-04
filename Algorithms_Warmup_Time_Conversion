@@ -1,0 +1,10 @@
+def timeConversion(s):
+    n_hours = s[0:2]
+    n_minutes = s[3:5]
+    n_seconds = s[6:8]
+    ampm = s[8:]
+    if ampm == "AM" and n_hours == "12":
+        n_hours = "00"
+    elif ampm == "PM" and int(n_hours) < 12:
+        n_hours = str(int(n_hours)+12)
+    return "{}:{}:{}".format(n_hours,n_minutes,n_seconds)
