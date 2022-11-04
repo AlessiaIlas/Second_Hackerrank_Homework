@@ -1,0 +1,7 @@
+def camelcase(s):
+
+    res_list = []
+    res_list = re.findall('[A-Z][^A-Z]*', s)
+    lenlist = len(res_list)
+    finlist = lenlist + 1
+    return finlist
