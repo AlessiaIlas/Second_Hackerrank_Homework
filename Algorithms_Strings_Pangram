@@ -1,0 +1,11 @@
+def pangrams(s):
+    trii = s.replace(" ", "")
+    trei = trii.lower()
+    trai = set(trei)
+    resuuu = ''
+    
+    if len(trai) == 26:
+        resuuu = 'pangram'
+    else: resuuu = "not pangram"
+    
+    return resuuu
