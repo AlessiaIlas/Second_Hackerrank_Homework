@@ -1,0 +1,11 @@
+def stringConstruction(s):
+    count_variable = 0
+
+    string_to_count = s
+    p_string = ''
+    for i in string_to_count:
+        if i in p_string:
+            p_string += i
+        else: p_string +=i ; count_variable += 1
+    count = str(count_variable)
+    return(count)
