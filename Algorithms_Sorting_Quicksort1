@@ -1,0 +1,14 @@
+def quickSort(arr):
+    n= len(arr)
+    pivot = arr[0]
+    lst_left = []
+    lst_right = []
+    lst_equal = []
+    for i in arr[0:n]:
+        if i == pivot:
+            lst_equal.append(i)
+        elif i<pivot:
+            lst_left.append(i)
+        elif i>pivot:
+            lst_right.append(i)
+    return *lst_left,*lst_equal,*lst_right
